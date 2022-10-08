@@ -136,7 +136,7 @@ public class createTable : MonoBehaviour
 
 ### 部分代码片段
 
-#### 判断胜负
+#### 判断胜负函数
 ```Csharp
 int checkState() 
 {
