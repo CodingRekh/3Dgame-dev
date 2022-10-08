@@ -130,8 +130,33 @@ public class createTable : MonoBehaviour
 
 ## 小型游戏项目代码
 
-### 代码片段
+### 代码仓库
 
-```
-Hello World
+[简易的井字棋](/hw2/TTT/)
+
+### 部分代码片段
+
+#### 判断胜负
+```Csharp
+int checkState() 
+{
+    if (board[0, 0] != 0 && board[0, 0] == board[1, 1] && board[0, 0] == board[2, 2])
+                return board[0, 0];
+    if (board[2, 0] != 0 && board[2, 0] == board[1, 1] && board[2, 0] == board[0, 2])
+                return board[2, 0];
+    int cnt = 0;
+    for (int temp1 = 0; temp1 < 3; temp1++) 
+    {
+        if (board[temp1, 0] == board[temp1, 1] && board[temp1, 0] == board[temp1, 2] && board[temp1, 0] != 0)
+                        return board[temp1, 0];
+        if (board[0, temp1] == board[1, temp1] && board[0, temp1] == board[2, temp1] && board[0, temp1] != 0)
+                        return board[0, temp1];
+        for (int temp2 = 0; temp2 <3; temp2++) 
+        {
+            if (board[temp1, temp2] == 0)
+                                cnt++;
+        }
+    }
+    return cnt==0?3:0;
+}
 ```
