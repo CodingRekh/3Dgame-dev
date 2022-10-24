@@ -98,8 +98,8 @@ public class Move_Translate : MonoBehaviour
 
 ## 太阳系仿真
 
-[**项目地址**](/hw3/solar_system/)
+[**项目文档及代码地址**](/hw3/solar_system/)
 
 ## 牧师与魔鬼小游戏
 
-[**项目地址**](/hw3/priest_and_devil/)
+[**项目文档及代码地址**](/hw3/priest_and_devil/)
