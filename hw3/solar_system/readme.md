@@ -4,18 +4,19 @@
 
 [下载地址](https://www.solarsystemscope.com/textures/)
 
-Texture目录
+#### Texture目录
 ![](../src/3.png)
 
 ## 2. 布置太阳及各行星
 
-太阳系游戏对象层次结构
+#### 太阳系游戏对象层次结构
+
 ![](../src/1.png)
 
-太阳系模拟场景
+#### 太阳系模拟场景
 ![](../src/2.png)
 
-为各星球添加纹路
+#### 为各星球添加纹路
 ![](../src/4.png)
 
 ## 3. 公转脚本代码
@@ -52,7 +53,7 @@ public class RotateAround : MonoBehaviour
 
 ## 4. 自转脚本代码
 
-共有变量：自转速度。
+**共有变量**：自转速度。
 ```Csharp
 using System.Collections;
 using System.Collections.Generic;
@@ -78,12 +79,12 @@ public class Rotate : MonoBehaviour
 
 ## 5. 设置各行星公转、自转的参数
 
-例图
+#### 例图
 ![](../src/5.png)
 
 其中各行星公转目标均设置为太阳，公转、自转速度按实际近似设置。
 
 ## 6. 运行演示
 
-截图
+#### 截图
 ![](../src/6.png)
